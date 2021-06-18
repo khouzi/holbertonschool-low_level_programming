@@ -8,9 +8,10 @@
  */
 int main(void)
 {
-int n;
+int n,a;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
+a = n % 10;
 if (a > 0 )
 {
 	printf("%d is positive",n);
@@ -24,4 +25,4 @@ else if ( a < 0 )
 	printf("%d is negative",n);
 }
 return (0);
-}i
+}
