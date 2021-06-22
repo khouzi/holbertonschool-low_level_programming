@@ -6,7 +6,7 @@
  *
  * Return: The absolute value of the integer.
  */
-int_abss(int n)
+int int_abss(int n)
 {
 	if (n >= 0)
 	{
