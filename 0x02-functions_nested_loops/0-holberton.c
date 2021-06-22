@@ -12,4 +12,5 @@ int main(void)
 	for (i = 0; i <=9; i++)
 		_putchar(ch[i]);
 	putchar('\n');
+	return (0);
 }
