@@ -21,6 +21,6 @@ int_abss(int)
 	else
 	{
 		n = n * (-1);
-		return (-1);
+		return (n);
 	}
 }
