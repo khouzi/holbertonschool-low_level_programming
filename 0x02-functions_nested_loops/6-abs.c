@@ -6,15 +6,9 @@
  *
  * Return: The absolute value of the integer.
  */
-int_abss(int)
+int_abss(int n)
 {
-	int n;
-
 	if (n >= 0)
-	{
-		return (n);
-	}
-	else if (n == 0)
 	{
 		return (n);
 	}
