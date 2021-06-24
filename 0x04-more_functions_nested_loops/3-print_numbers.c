@@ -1,15 +1,14 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * print_numbers - Prints the numbers from 0-9.
  */
 void print_numbers(void)
 {
-	int i;
+	int num;
 
-	for (i = 0; i <=9; i++)
-		_putchar(i);
+	for (num = 0; num <= 9; num++)
+		_putchar((num % 10) + '0');
+
 	_putchar('\n');
 }
