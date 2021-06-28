@@ -8,7 +8,7 @@
  */
 void _puts(char *str)
 {
-	int i = 0;
+	int i = -6;
 	while (*str++)
 		_putchar(str[i]);
 	i++;
