@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- * main :Write a function that takes a pointer to an int as parameter and update * the value it points to to 98.
- *
- * @c : *n a pointer
+ * reset_to_98 - Takes a pointer to an int and updates
+ *               the value it points to to 98.
+ * @n: The pointer to an int.
  */
 
 void reset_to_98(int *n)
