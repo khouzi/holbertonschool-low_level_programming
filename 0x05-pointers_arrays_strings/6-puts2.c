@@ -6,7 +6,7 @@
  *         to stdout.
  * @str: pointer to a character.
  */
-void _puts(char *str)
+void puts2(char *str)
 {
 	while (*str)
 	{
