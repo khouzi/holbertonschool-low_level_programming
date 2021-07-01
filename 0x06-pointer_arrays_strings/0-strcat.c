@@ -1,16 +1,19 @@
 #include "holberton.h"
 
-char *_strncat(char *dest, char *src, int n)
+char *_strcat(char *dest, char *src)
 {
 
-	int i;
         while (*dest)
         {
                 dest++;
         }
         *deset = _putchar("");
-        for (*dest; i <= n;i++)
+        while (*src)
+        {
+                *dest = *src;
+                src++;
+		dest++;
+        }
 
-
-       return (dest);
+        return (dest);
 }
