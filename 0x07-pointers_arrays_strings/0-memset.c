@@ -12,8 +12,9 @@
 void *memset(void *s, int b, unsigned int n)
 {
 	int i;
+	char *ch = s;
 
 	for (i=0; i < n; i++)
-		s[i] = b;
-	return (s);
+		ch[i] = b;
+	return (ch);
 }
