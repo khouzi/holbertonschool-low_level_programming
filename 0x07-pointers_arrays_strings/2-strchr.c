@@ -21,7 +21,7 @@ char *_strchr(char *s, char c)
 	for (s[j]; j <= i; j++)
 	{
 		if (s[j] == c)
-			s = &c;
+			*s = &c;
 	}
 	return (s);
 }
