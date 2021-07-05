@@ -9,7 +9,7 @@
 *
 * Return: A pointer to the filled memory area @s.
 */
-char *memset(char *s, int b, unsigned int n)
+char *_memset(char *s, int b, unsigned int n)
 {
 	int i;
 	char *ch = s;
