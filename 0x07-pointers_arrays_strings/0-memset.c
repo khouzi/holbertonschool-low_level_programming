@@ -12,6 +12,6 @@
 void *memset(void *s, int b, unsigned int n)
 {
 	for (s; *s <= n; s++)
-		*S = b;
+		*s = b;
 	return (s);
 }
