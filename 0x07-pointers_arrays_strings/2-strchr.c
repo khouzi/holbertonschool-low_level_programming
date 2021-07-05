@@ -1,12 +1,12 @@
 #include "holberton.h"
 
 /**
- * _strchr - write a function that locates a character in a string
+ * _strchr - Locates a character in a string.
+ * @s: The string to be searched.
+ * @c: The character to be located.
  *
- * @s: A pointer to the memory area to be filled.
- * @c: first occurrence of the character.
- *
- * Return: A pointer to the filled memory area @s.
+ * Return: If c is found - a pointer to the first occurence.
+ *         If c is not found - NULL.
  */
 
 char *_strchr(char *s, char c)
