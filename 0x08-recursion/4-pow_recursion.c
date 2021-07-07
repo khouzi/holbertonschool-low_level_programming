@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _pow_recursion - function that returns the value of x raised
+ * pow_recursion - function that returns the value of x raised
  *                  to the power of y.
  *
  * @x : integer.
@@ -12,10 +12,10 @@
 
 int _pow_recursion(int x, int y)
 {
-	if (y < x)
-		return (-1);
-	else if (y == 0)
+	if (y == 0)
 		return (1);
-	else
-		return (x *=_pow_recursion(x, y--));
+	else if (y < 0)
+		return (-1);
+	else if 
+		return (x * _pow_recursion(x, y--));
 }
