@@ -40,7 +40,7 @@ int get_change(int num)
 	}
 	while (num >= 10)
 	{
-		amount -= 10;
+		num -= 10;
 		b++;
 	}
 	while (num >= 5)
