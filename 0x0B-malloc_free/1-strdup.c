@@ -5,7 +5,8 @@ char *_strdup(char *str)
 {
 	char *T;
 
-	if (str == NULL)
+	T = malloc(sizeof(*str));
+	if (T == NULL)
 		return (NULL);
 	while (*str)
 	{
