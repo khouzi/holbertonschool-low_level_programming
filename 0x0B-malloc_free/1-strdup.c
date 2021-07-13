@@ -17,7 +17,7 @@ char *_strdup(char *str)
 	T = malloc(sizeof(*str) * j + 1);
 	if (T == NULL)
 		return (NULL);
-	dupStart = dup;
+	dupStart = T;
 	while (*K)
 	{
 		T[i] = K[i];
