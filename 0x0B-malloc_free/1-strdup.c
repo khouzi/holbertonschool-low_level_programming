@@ -5,17 +5,15 @@ char *_strdup(char *str)
 {
 	char *T, *K;
 	char *dupStart;
-	int i,j;
+	int i;
 
 	i = 0;
-	j = 0;
-
 	if (str == NULL)
 		return (NULL);
 	K = str;
-	while (*(str + j))
+	while (*(str + i))
 		j++;
-	T = malloc(sizeof(*str) * (j + 1));
+	T = malloc(sizeof(*str) * (i + 1));
 	if (T == NULL)
 		return (NULL);
 	dupStart = T;
