@@ -3,21 +3,22 @@
 
 char *_strdup(char *str)
 {
-	char *T;
+	char *T, *K;
 	int i,j;
 
 	i = 0;
 	j = 0;
 	if (str == NULL)
 		return (NULL);
+	k = str;
 	while (*(str + j))
 		j++;
 	T = malloc(sizeof(*str) * j + 1);
 	if (T == NULL)
 		return (NULL);
-	while (*str)
+	while (*K)
 	{
-		T[i] = str[i];
+		T[i] = K[i];
 		i++;
 	}
 	return (T);
