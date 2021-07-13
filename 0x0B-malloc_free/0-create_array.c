@@ -8,6 +8,11 @@ char *create_array(unsigned int size, char c)
 	if (size == 0)
 		return (NULL);
 	T = malloc(size);
+	if (s == NULL)
+	{
+		printf("Can't allocate %d bytes (after 0 calls)\n", size);
+		return (1);
+        }
 	T[0] = c;
 	return (T);
 }
