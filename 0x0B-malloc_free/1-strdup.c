@@ -6,7 +6,7 @@ char *_strdup(char *str)
 	char *T;
 	int i;
 
-	int = 0;
+	i = 0;
 	T = malloc(sizeof(*str));
 	if (T == NULL)
 		return (NULL);
