@@ -9,19 +9,18 @@ char *_strdup(char *str)
 
 	i = 0;
 	j = 0;
+
 	if (str == NULL)
 		return (NULL);
 	K = str;
 	while (*(str + j))
 		j++;
-	T = malloc(sizeof(*str) * j + 1);
+	T = malloc(sizeof(*str) * (j + 1));
 	if (T == NULL)
 		return (NULL);
 	dupStart = T;
 	while (*K)
-	{
-		T[i] = K[i];
-		i++;
-	}
-	return (T);
+		*T++ = *K++;
+	*T = '\0'; /* null byte */
+	return (dupStart);
 }
