@@ -20,8 +20,8 @@ char *str_concat(char *s1, char *s2)
 	D = T;
 	while (*K)
 		*T++ = *K++;
-	while (*L);
-		*T++ = *L;
+	while (*L)
+		*T++ = *L++;
 	*T = '\0';
 	return (D);
 }
