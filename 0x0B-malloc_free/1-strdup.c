@@ -28,5 +28,5 @@ char *_strdup(char *str)
 	while (*K)
 		*T++ = *K++;
 	*T = '\0';
-	return (T);
+	return (D);
 }
