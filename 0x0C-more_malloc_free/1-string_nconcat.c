@@ -18,22 +18,24 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	while (s1[i])
-	{
+	while (*(s1 + i))
 		i++;
-	}
-	T = malloc(sizeof(char) * (i + n + 1));
+	while (*(s2 + j))
+		j++;
+	if (n > j)
+		n = j;
+	T = malloc(sizeof(char) * (i + j + 1));
 	if (T == NULL)
 		return (NULL);
 	Tstart = T;
-	while (j < n && s2[j])
+	while (*s1)
+		*T++ = *s1++;
+	while (i < n)
 	{
-		s1[i] = s2[j];
+		*T++ = *s2++;;
 		i++;
-		j++;
 	}
+	*T = '\0';
 
-	s1[i + n + 1] = '\0';
-
-	return (s1);
+	return (Tstart);
 }
