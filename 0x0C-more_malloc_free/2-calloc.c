@@ -1,3 +1,4 @@
+  
 #include <stdlib.h>
 void *set_mem(void *p, unsigned int nmemb, unsigned int size, char ch);
 /**
@@ -10,15 +11,15 @@ void *set_mem(void *p, unsigned int nmemb, unsigned int size, char ch);
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *T;
+	void *ret;
 
 	if (nmemb < 1 || size < 1)
 		return (NULL);
 	ret = malloc(nmemb * size);
-	if (T == NULL)
+	if (ret == NULL)
 		return (NULL);
-	T = set_mem(ret, nmemb, size, '\0');
-	return (T);
+	ret = set_mem(ret, nmemb, size, '\0');
+	return (ret);
 }
 /**
  * set_mem - sets memory for void pointer
