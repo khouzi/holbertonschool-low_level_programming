@@ -1,4 +1,3 @@
-  
 #include <stdlib.h>
 void *set_mem(void *p, unsigned int nmemb, unsigned int size, char ch);
 /**
