@@ -11,7 +11,7 @@ int *fill_array_range(int *p, int min, int max);
  */
 int *array_range(int min, int max)
 {
-	int *ret, len = 0, temp;
+	int *T, len = 0, temp;
 
 	if (min > max)
 		return (NULL);
@@ -21,11 +21,11 @@ int *array_range(int min, int max)
 		len++;
 		temp++;
 	}
-	ret = malloc(sizeof(min) * len);
-	if (ret == NULL)
+	T = malloc(sizeof(min) * len);
+	if (T == NULL)
 		return (NULL);
-	ret = fill_array_range(ret, min, max);
-	return (ret);
+	T = fill_array_range(T, min, max);
+	return (T);
 }
 /**
  * fill_array_range - fills an array with a range of nums
