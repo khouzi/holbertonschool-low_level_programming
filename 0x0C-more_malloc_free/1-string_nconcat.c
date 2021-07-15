@@ -1,10 +1,12 @@
 #include "holberton.h"
 #include <stdlib.h>
+
 /**
- * str_concat - concatenates two strings, makes new string
+ * string_nconcat - concatenates two strings, up to n bytes of s2
  *
  * @s1: string 1 to concatenate with string 2
  * @s2: string 2 to concatenate with string 1
+ * @n: number of bytes to concatenate of s2
  *
  * Return: pointer to new string, or NULL on failure
  */
@@ -12,7 +14,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i = 0, j = 0, k = 0;
-	char *T, *Tstart;;
+	char *T, *Tstart;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -32,7 +34,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		*T++ = *s1++;
 	while (k < n)
 	{
-		*T++ = *s2++;;
+		*T++ = *s2++;
 		i++;
 	}
 	*T = '\0';
