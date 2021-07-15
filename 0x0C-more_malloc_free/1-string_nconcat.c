@@ -11,7 +11,7 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int i = 0, j = 0;
+	int i = 0, j = 0, k = 0;
 	char *T, *Tstart;;
 
 	if (s1 == NULL)
@@ -30,7 +30,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	Tstart = T;
 	while (*s1)
 		*T++ = *s1++;
-	while (i < n)
+	while (k < n)
 	{
 		*T++ = *s2++;;
 		i++;
