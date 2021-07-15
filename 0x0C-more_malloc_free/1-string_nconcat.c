@@ -34,8 +34,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	Tstart = T;
 	while (*s1)
 		*T++ = *s1++;
-	for (k = 0; *s2 && k < n; k++)
-		*T = *s2;
+	while (k < n)
+	{
+		*T++ = *s2++;
+		k++;
+	}
 	*T = '\0';
 	return (Tstart);
 }
