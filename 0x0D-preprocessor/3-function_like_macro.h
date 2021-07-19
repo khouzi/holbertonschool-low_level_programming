@@ -1,3 +1,3 @@
-#ifndef FUCNTION_LIKE_MACRO
-#define ABS(x) (x * -1)
+#ifndef _FUCNTION_LIKE_MACRO_
+#define ABS(N) ((N<0)?(-N):(N))
 #endif
