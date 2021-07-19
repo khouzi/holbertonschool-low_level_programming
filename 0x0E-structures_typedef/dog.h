@@ -1,14 +1,18 @@
+#ifndef DOG_H
+#define DOG_H
+
 /**
- * struct dog - dog identity
+ * struct dog - dog information
  * @name: name of the dog
  * @age: age of the dog
- * @owner:owner of the dog
+ * @owner: the name of the owner
  *
- * Description: gives a name age and ownership to a dog
+ * Description: dog struct
  */
+
 struct dog
 {
 	char *name;
-	float *age;
+	float age;
 	char *owner;
 };
