@@ -16,3 +16,13 @@ struct dog
 	float age;
 	char *owner;
 };
+
+struct dog *doggy(char *name, float *age, char *owner)
+{
+	struct dog *dog;
+
+	dog->name = name;
+	dog->age = age;
+	dog->owner = owner;
+	return dog;
+}
