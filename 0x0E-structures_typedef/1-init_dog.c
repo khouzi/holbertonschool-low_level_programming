@@ -1,18 +1,20 @@
-#include "holberton.h"
-
-struct dog
-{
-	char *name;
-	float age;
-	char *owner;
-};
-
+#include "dog.h"
+#define NULL (void *)0
+/**
+ * init_dog - initializes dog structure
+ *
+ * @d: struct to initialize
+ * @name: dog's name
+ * @age: dog's age
+ * @owner: dog's owner
+ *
+ * Return: always void
+ */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	struct dog my_dog;
-
-	my_dog.name = "Poppy";
-	my_dog.age = 3.5;
-	my_dog.owner = "Bob";
-	printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
+	if (d == NULL)
+		return;
+	d->name = name;
+	d->age = age;
+	d->owner = owner;
 }
