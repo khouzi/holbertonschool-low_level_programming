@@ -3,7 +3,7 @@
 	section	.text
 main:	mov	rax, 1
 	mov	rdi, 1
-	mov	rsi, msg
+	mov	rsi, message
 	mov	rdx, 17
 	syscall
 	mov	rax, 60
@@ -11,4 +11,4 @@ main:	mov	rax, 1
 	syscall
 
 	section	.data
-msg:db	"Hello, Holberton", 10
+message:db	"Hello, Holberton", 10
