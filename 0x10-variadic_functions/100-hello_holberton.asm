@@ -8,8 +8,8 @@ main:	mov	rax, 1
 	rds,	17
 	syscall
 	mov	rax, 60
-	xor	dir, dir
+	xor	rdi, rdi
 	syscall
 
 	section .data
-msg:db "Hello, Holberton", 10
+msg:db		"Hello, Holberton", 10
