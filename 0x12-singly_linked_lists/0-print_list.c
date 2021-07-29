@@ -1,4 +1,5 @@
 #include <sdtio.h>
+#include <string.h>
 #include <stlib.h>
 #include "lists.h"
 
