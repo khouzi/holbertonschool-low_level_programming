@@ -1,4 +1,7 @@
-include "lists.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include "lists.h"
+
 /**
  * free_listint - frees a list_t list.
  *@head: pointer.
