@@ -1,17 +1,39 @@
 #include "lists.h"
 /**
- *sum_dlistint - returns the sum of all the data (n)
- *                  of a dlistint_t linked list.
- *@head: pointer to dlistint_t list.
- * Return: the sum of all the data (n), otherwise, NULL.
+ * insert_dnodeint_at_index - inserts a new node at a given position*
+ * @h : double pointer to a struct
+ * @idx : the position of the new node
+ * @n : the value stored in the new node
+ *
+ * Return: the addres of the new node
  */
-int sum_dlistint(dlistint_t *head)
+
+dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-int sum = 0;
-while (head)
-{
-sum += head->n;
-head = head->next;
-}
-return (sum);
+	dlistint_t *tmp = *h, *new;
+
+	if (idx == 0)
+		return (add_dnodeint(h, n));
+
+	for (; idx != 1; idx--)
+	{
+		tmp = tmp->next;
+		if (tmp == NULL)
+			return (NULL);
+	}
+
+	if (tmp->next == NULL)
+		return (add_dnodeint_end(h, n));
+
+	new = malloc(sizeof(dlistint_t));
+	if (new == NULL)
+		return (NULL);
+
+	new->n = n;
+	new->prev = tmp;
+	new->next = tmp->next;
+	tmp->next->prev = new;
+	tmp->next = new;
+
+	return (new);
 }
