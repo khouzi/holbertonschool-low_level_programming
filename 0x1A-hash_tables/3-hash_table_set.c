@@ -23,13 +23,13 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	while (tmp != NULL)
 	{
-		if (strcmp(tmp->key, key) == 0)
-			{
-				free(tmp->value);
-				tmp->value = strdup(value);
-				return (1);
-			}
-			tmp = tmp->next;
+			if (strcmp(tmp->key, key) == 0)
+				{
+					free(tmp->value);
+					tmp->value = strdup(value);
+					return (1);
+				}
+				tmp = tmp->next;
 	}
 
 	new = malloc(sizeof(hash_node_t));
