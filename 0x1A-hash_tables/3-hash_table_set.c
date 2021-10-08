@@ -5,7 +5,7 @@
 *@ht: hash_table_t
 *@key: const char
 *@value: const char
-
+*
 * Return: 1 on success otherwise 0
 */
 
@@ -23,7 +23,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	while (tmp != NULL)
 	{
-		if(strcmp(tmp->key, key) == 0)
+		if (strcmp(tmp->key, key) == 0)
 			{
 				free(tmp->value);
 				tmp->value = strdup(value);
