@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 /**
- * hash_table_print - a function that prints a hash table.
- * @ht: pointer to a hash table.
+ * hash_table_print - print key/values of hash table in order
+ * @ht: hash table
  */
 
 void hash_table_print(const hash_table_t *ht)
@@ -10,8 +10,9 @@ void hash_table_print(const hash_table_t *ht)
 	hash_node_t *node;
 	char *comma = "";
 
-	if (ht == NULL || !ht->array)
+	if (!ht || !ht->array)
 		return;
+
 	putchar('{');
 	while (i < ht->size)
 	{
@@ -24,5 +25,5 @@ void hash_table_print(const hash_table_t *ht)
 		}
 		i++;
 	}
-	putchar("}");
+	puts("}");
 }
