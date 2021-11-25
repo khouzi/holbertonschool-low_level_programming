@@ -3,4 +3,4 @@ CC:
 SRC:
 	main.c source.c
 all:
-	$(SRC)
+	$(CC) $(SRC)
